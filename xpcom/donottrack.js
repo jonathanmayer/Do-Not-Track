@@ -46,7 +46,7 @@ var myModule =
 {
 	registerSelf: function (componentManager, fileSpec, location, type)
 	{
-		var componentManagerI = compMgr.QueryInterface(Components.interfaces.nsIComponentRegistrar);
+		var componentManagerI = componentManager.QueryInterface(Components.interfaces.nsIComponentRegistrar);
 		componentManagerI.registerFactoryLocation(this.myCID, this.myName, this.myProgID, fileSpec, location, type);
 		var categoryManager = Components.classes["@mozilla.org/categorymanager;1"].getService(Components.interfaces.nsICategoryManager);
 		categoryManager.addCategoryEntry("app-startup", this.myName, this.myProgID, true, true);
