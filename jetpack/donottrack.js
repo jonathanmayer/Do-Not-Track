@@ -4,10 +4,13 @@ Jonathan Mayer - jmayer@stanford.edu
  
 A Jetpack module that adds a Do Not Track header to all web requests.
 
+v0.02 - 1/30/11
+Updated header.
+
 v0.01 - 11/14/10
 */
 
-var DoNotTrackHeaderName = "X-Do-Not-Track";
+var DoNotTrackHeaderName = "DNT";
 var DoNotTrackHeaderValue = "1";
 
 var {Cc, Ci} = require("chrome");

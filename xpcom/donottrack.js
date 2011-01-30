@@ -4,12 +4,15 @@ Jonathan Mayer - jmayer@stanford.edu
 
 An XPCOM component that adds a Do Not Track header to all web requests.
 
+v0.02 - 1/30/11
+Updated header.
+
 v0.01 - 10/26/10
 
 Acknowledgement: Closely follows Mozilla's example XPCOM HTTP header modification component, https://developer.mozilla.org/en/Setting_HTTP_request_headers.
 */
 
-var DoNotTrackHeaderName = "X-Do-Not-Track";
+var DoNotTrackHeaderName = "DNT";
 var DoNotTrackHeaderValue = "1";
 
 function DNTHTTPListener() { }

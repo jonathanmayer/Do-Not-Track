@@ -4,6 +4,9 @@ Jonathan Mayer - jmayer@stanford.edu
 
 A proof-of-concept web proxy that adds a Do Not Track header to all requests.  Not intended for regular use.
 
+v0.02 - 1/30/11
+Updated header.
+
 v0.01 - 10/5/10
 Sloppy HTTP 1.0 support.  Apologies for any Python faux pas; this is my first foray into the language.
 Acknowledgement: Architecture follows Suzuki Hisao's TinyHTTPProxy, http://www.okisoft.co.jp/esc/python/proxy/.
@@ -15,7 +18,7 @@ import urlparse
 import socket
 import select
 
-DoNotTrackHeaderName = "X-Do-Not-Track"
+DoNotTrackHeaderName = "DNT"
 DoNotTrackHeaderValue = "1"
 
 AllowedHosts = ["127.0.0.1"]
