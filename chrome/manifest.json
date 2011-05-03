@@ -1,0 +1,8 @@
+{
+  "name": "Do Not Track",
+  "version": "0.1",
+  "background_page": "background.html",
+  "permissions": [
+    "experimental"
+  ]
+}

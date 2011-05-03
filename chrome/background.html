@@ -1,0 +1,9 @@
+<html>
+<head>
+<script>
+chrome.experimental.webRequest.onBeforeSendHeaders.addListener(function(details) {
+	return {requestHeaders: details.requestHeaders + "DNT: 1\r\n"};
+}, {}, ["requestHeaders", "blocking"]);
+</script>
+</head>
+</html>
