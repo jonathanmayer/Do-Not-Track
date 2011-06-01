@@ -2,7 +2,8 @@
 <head>
 <script>
 chrome.experimental.webRequest.onBeforeSendHeaders.addListener(function(details) {
-	return {requestHeaders: details.requestHeaders + "DNT: 1\r\n"};
+	details.requestHeaders.push({name: "DNT", value: "1"});
+	return {requestHeaders: details.requestHeaders};
 }, {}, ["requestHeaders", "blocking"]);
 </script>
 </head>
