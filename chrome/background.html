@@ -1,10 +1,5 @@
 <html>
 <head>
-<script>
-chrome.experimental.webRequest.onBeforeSendHeaders.addListener(function(details) {
-	details.requestHeaders.push({name: "DNT", value: "1"});
-	return {requestHeaders: details.requestHeaders};
-}, {}, ["requestHeaders", "blocking"]);
-</script>
+<script src="background.js"></script>
 </head>
 </html>
